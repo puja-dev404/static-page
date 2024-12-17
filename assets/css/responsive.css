@@ -1,0 +1,152 @@
+/* Media Queries for navbar */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; 
+        flex-direction: column; 
+        position: absolute;
+        top: 80px; 
+        right: 0; 
+        background-color: #fff; 
+        width: 100%;
+        z-index: 1; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+        padding: 10px 0; 
+    }
+
+    .nav-links.show {
+        display: flex; 
+        background-color: #fbeed0;
+    }
+
+    .hamburger {
+        display: flex; 
+    }
+
+    .nav-links li {
+        margin-bottom: 16px; 
+    }
+
+    .nav-links a {
+        text-align: center;
+        align-items: center;
+        padding: 15px 0;
+        width: 100%; 
+        color: #333; 
+        text-decoration: none; 
+    }
+
+   
+    .sub_nav {
+        justify-content: space-between;
+    }
+  
+}
+
+     /*footer  Responsive css */
+  @media (max-width: 768px) {
+    .footer-left-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-description {
+      text-align: center;
+      margin-top: 16px;
+    }
+  
+    .footer-nav ul li {
+      display: block;
+      margin: 10px 0;
+    }
+  
+    .footer-contact {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
+  /* Responsive training section */
+ 
+@media (max-width: 900px) {
+    .training_container {
+      flex-direction: column;
+    }
+  
+    .left-side,
+    .content-container {
+      width: 100%;
+    }
+  
+    .content-container {
+      padding-left: 0;
+      margin-top: 20px;
+    }
+  }
+/* service section responsive*/
+@media (max-width: 1024px) {
+    .service-item {
+        width: 45%;
+    }
+}
+@media (max-width: 768px) {
+    .service-item {
+        width: 100%;
+    }
+    .section-title {
+        font-size: 2rem;
+    }
+}
+@media (max-width: 576px) {
+    .icon-box {
+        width: 50px;
+        height: 50px;
+    }
+    .icon-box i {
+        font-size: 20px;
+    }
+    h4 {
+        font-size: 1.25rem;
+    }
+    p {
+        font-size: 0.9rem;
+    }
+}
+
+/*header Responsive Design */
+@media (max-width: 768px) {
+    .header_section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left_section {
+        width: 100%;
+        text-align: center; 
+        margin-bottom: 20px; 
+    }
+
+    .right_section {
+        width: 100%; 
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    /*  one circle in mobile view */
+    .image_wrapper {
+        display: none; 
+    }
+
+    .img_section_sub {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .img_section_sub .image img {
+        width: 170px;
+        height: 170px; 
+        position: relative;
+        right: 17px;
+        top: 32px;
+    }
+}
